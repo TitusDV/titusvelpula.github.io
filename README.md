@@ -46,6 +46,14 @@ From then on, every change you commit goes live within a couple of minutes.
 3. At your registrar, add the DNS records GitHub's documentation lists for your setup (A records for a root domain like `titusvelpula.com`, or a CNAME record for `www`). The exact values are in GitHub's guide: "Managing a custom domain for your GitHub Pages site".
 4. Once DNS has updated, tick **Enforce HTTPS** in Settings > Pages.
 
+## Editing your CV
+
+The CV's source is `cv/cv.html` (fonts are in `cv/fonts/`). To update it:
+
+1. Change the text in `cv/cv.html`.
+2. Open it in Chrome and choose **Print > Save as PDF**. Under "More settings", set Margins to **Default**, tick **Background graphics**, and untick **Headers and footers**.
+3. Save it as `assets/Titus_Velpula_CV.pdf`, replacing the old one.
+
 ## Note on the telecare PDF
 
 The RAG project links to the PDF still hosted on the old Wix site, and the RAG notebook downloads it from the Wix Projects page. If you close the Wix site, put the PDF in `assets/`, update the link in `projects.html`, and update the notebook to download from the new address.
