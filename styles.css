@@ -162,9 +162,6 @@ h1, h2, h3, p, ul { margin: 0; }
 .job h3 { font-size: 19px; font-weight: 600; }
 .job ul { margin-top: 6px; padding-left: 20px; }
 .dates { font-family: var(--mono); font-size: 14px; color: var(--muted); }
-.edu { padding-top: 24px; border-top: 1px solid var(--line); gap: 16px; }
-.edu > div { display: flex; flex-direction: column; gap: 4px; }
-.edu .label { font-size: 12px; color: var(--muted); }
 
 /* ---------- Project write-ups ---------- */
 .project { display: flex; flex-wrap: wrap; gap: 40px; padding: 56px 0; border-top: 1px solid var(--line); }
