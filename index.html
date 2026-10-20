@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Titus Velpula | AI Developer, Auckland</title>
+  <meta name="description" content="AI Developer in Auckland building AI agents, retrieval systems and automation that run in production.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html">Titus Velpula</a>
+    <div class="nav-links">
+      <a href="#work">What I do</a>
+      <a href="projects.html">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <!-- EDIT: put your general CV in the assets folder with this exact file name -->
+      <a class="btn btn-outline btn-sm" href="assets/Titus_Velpula_CV.pdf">Download CV</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <p class="label">AI Developer · Auckland, NZ</p>
+      <h1>I build AI agents and automations that run in production.</h1>
+      <p class="hero-sub">Retrieval systems, multi-agent workflows with evaluation gates, and the integrations that connect them to real business systems. Grounded in a background in data analytics.</p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="projects.html">View projects</a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CURRENTLY ===================== -->
+  <section class="section border-top" aria-labelledby="now-h">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="now-h" class="label label-muted">Currently</h2>
+        <!-- EDIT: change this whenever you update the cards below -->
+        <p class="muted" style="font-size:15px">Updated October 2026</p>
+      </div>
+      <div class="grid grid-wide">
+        <div class="card">
+          <p class="label">In production</p>
+          <h3>AI Developer at Celtine Ltd</h3>
+          <p class="muted">Building and running AI agents and automation for a multi-brand e-commerce business: customer service, sales orders, stock checks and dropship tracking.</p>
+        </div>
+        <div class="card">
+          <p class="label">Ready to go live</p>
+          <h3>Social media automation platform</h3>
+          <p class="muted">A multi-workflow agent system that writes, renders, reviews and publishes posts to Instagram, Facebook, Threads and TikTok.</p>
+        </div>
+        <div class="card">
+          <p class="label">Looking for</p>
+          <h3>AI and automation roles in Auckland</h3>
+          <p class="muted">Full-time preferred. I work directly with business teams to turn manual processes into reliable AI systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT I DO ===================== -->
+  <section id="work" class="section border-top">
+    <div class="container">
+      <h2 class="label label-muted" style="margin-bottom:40px">What I do</h2>
+      <div class="grid grid-loose">
+        <div class="skill">
+          <h3>Retrieval and RAG</h3>
+          <p class="muted">Question-answering over documents with hybrid BM25 and dense-vector retrieval.</p>
+          <p class="stack">LangChain · ChromaDB · Ollama</p>
+        </div>
+        <div class="skill">
+          <h3>Agents and evaluation</h3>
+          <p class="muted">Multi-agent workflows with tiered evaluation gates, so output is checked before it ships.</p>
+          <p class="stack">LLM-as-judge · RAGAS · DeepEval · LangSmith</p>
+        </div>
+        <div class="skill">
+          <h3>Automation and integration</h3>
+          <p class="muted">Workflows connecting CRM, e-commerce, shipping, inventory and social platforms.</p>
+          <p class="stack">n8n · Docker · Linux · REST</p>
+        </div>
+        <div class="skill">
+          <h3>Data analytics</h3>
+          <p class="muted">Dashboards and analysis that turn raw data into decisions.</p>
+          <p class="stack">SQL · Python · Power BI · SAS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED PROJECT ===================== -->
+  <section class="dark" aria-labelledby="featured">
+    <div class="container section split">
+      <div class="split-text">
+        <p class="label">Featured project</p>
+        <h2 id="featured" class="h-feature">Customer-service agent system</h2>
+        <p class="lead on-dark-muted">Enquiries used to need staff to check several business systems before replying. This production system classifies each enquiry, gathers the conversation context and retrieves order and shipping details to draft a reply, or escalates to staff.</p>
+        <p class="lead on-dark-muted">Real cases shaped it: partial shipments can sit under variations of the original order number, so it now looks up separate dispatches too.</p>
+        <p class="stack">n8n · JavaScript · Claude and OpenAI APIs · structured output validation</p>
+        <div class="btn-row" style="margin-top:8px">
+          <a class="btn btn-light" href="projects.html">See all projects</a>
+        </div>
+      </div>
+      <div class="split-panel steps">
+        <div class="steps-title">How it works</div>
+        <div class="step"><span class="step-num">01</span><span>Classify the enquiry</span></div>
+        <div class="step"><span class="step-num">02</span><span>Gather the conversation context</span></div>
+        <div class="step"><span class="step-num">03</span><span>Retrieve order and shipping information</span></div>
+        <div class="step"><span class="step-num">04</span><span>Draft a validated reply, or escalate to staff</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANALYTICS PROJECTS ===================== -->
+  <section class="section" aria-labelledby="analytics">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="analytics" class="h-section">Analytics projects</h2>
+        <a href="projects.html#analytics" style="font-weight:500">All projects</a>
+      </div>
+      <!-- EDIT: to add a screenshot, replace a <div class="thumb placeholder"> with
+           <img class="thumb" src="assets/pizza.png" alt="Pizza sales dashboard"> -->
+      <div class="grid">
+        <a class="project-card" href="projects.html#pizza">
+          <div class="thumb placeholder">Add dashboard screenshot</div>
+          <div class="body">
+            <h3>Plato's Pizzeria Sales</h3>
+            <p class="muted">A year of orders: sales forecast, revenue by table size, and menu recommendations.</p>
+            <p class="stack">Power BI · DAX · Python</p>
+          </div>
+        </a>
+        <a class="project-card" href="projects.html#attrition">
+          <div class="thumb placeholder">Add dashboard screenshot</div>
+          <div class="body">
+            <h3>Employee Attrition</h3>
+            <p class="muted">What drives people to leave, prototyped in SQL and rebuilt as DAX measures.</p>
+            <p class="stack">Power BI · SQL Server · Python</p>
+          </div>
+        </a>
+        <a class="project-card" href="projects.html#ski">
+          <div class="thumb placeholder">Add dashboard screenshot</div>
+          <div class="body">
+            <h3>Ski Resorts Planner</h3>
+            <p class="muted">499 resorts joined to global snow-cover data in an app-style report.</p>
+            <p class="stack">Power BI · Excel · MySQL</p>
+          </div>
+        </a>
+        <a class="project-card" href="projects.html#electricity">
+          <div class="thumb placeholder">Add dashboard screenshot</div>
+          <div class="body">
+            <h3>NZ Electricity</h3>
+            <p class="muted">National generation, consumption and losses with year-on-year KPIs.</p>
+            <p class="stack">Power BI · DAX</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section border-top" aria-labelledby="exp-h">
+    <div class="container exp-layout">
+      <h2 id="exp-h" class="h-section">Experience</h2>
+      <div class="exp-list">
+
+        <div class="job">
+          <div class="job-main">
+            <h3>AI Developer (contract)</h3>
+            <p class="muted">Celtine Ltd, Auckland</p>
+            <ul>
+              <li>Map manual processes with operational staff and owners, and break them into steps an agent can own.</li>
+              <li>Automate sales orders, supplier stock checks, out-of-stock notices, dropship tracking and fraud screening across e-commerce, ERP, helpdesk and shipping systems.</li>
+              <li>Write evaluations, investigate production failures and remove silent failures; design for graceful degradation and escalation to staff.</li>
+              <li>Maintain the self-hosted Linux infrastructure behind it (Docker, Cloudflare Tunnel, backups, credentials).</li>
+            </ul>
+          </div>
+          <p class="dates">May 2025 to present</p>
+        </div>
+
+        <div class="job">
+          <div class="job-main">
+            <h3>Telecare Monitoring Representative (part-time)</h3>
+            <p class="muted">Hato Hone St John</p>
+            <p>Respond to emergency alarms, coordinate with customers, responders and support services, and make timely escalation decisions under established protocols.</p>
+          </div>
+          <p class="dates">Oct 2023 to present</p>
+        </div>
+
+        <div class="job">
+          <div class="job-main">
+            <h3>Campaign Developer</h3>
+            <p class="muted">Digital Alchemy</p>
+            <p>Built segmented multi-channel campaigns in Unica Campaign, with pre- and post-campaign analysis in Oracle and SQL.</p>
+          </div>
+          <p class="dates">Oct 2021 to Feb 2022</p>
+        </div>
+
+        <div class="job">
+          <div class="job-main">
+            <h3>Analytics Specialist</h3>
+            <p class="muted">Spark NZ (Skinny Mobile and Broadband)</p>
+            <p>Built Power BI and Tableau dashboards and automated reporting with Alteryx, SQL and Snowflake. Awarded for best customer service.</p>
+          </div>
+          <p class="dates">Jan 2021 to Jun 2021</p>
+        </div>
+
+        <div class="grid edu">
+          <div>
+            <p class="label">Education</p>
+            <p style="font-weight:500">Master of Analytics (Honours), AUT, 2023 to 2024</p>
+            <p class="muted" style="line-height:1.5">Thesis: SVM classification of stress from EEG data, 86.8% cross-validated accuracy.</p>
+            <p style="font-weight:500; margin-top:8px">B.Tech, Computer Science Engineering, JNTU, India</p>
+          </div>
+          <div>
+            <p class="label">Certification</p>
+            <p style="font-weight:500">SAS Certified Specialist: Base Programming Using SAS 9.4</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="accent-band" aria-labelledby="contact-h">
+    <div class="container section contact">
+      <div style="flex:1 1 480px; display:flex; flex-direction:column; gap:16px">
+        <h2 id="contact-h">Let's talk about what you're building.</h2>
+        <p class="lead">Open to AI and automation roles in Auckland.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:titusdinkar@gmail.com">titusdinkar@gmail.com</a>
+        <a href="https://www.linkedin.com/in/titus-dinakar-velpula/">LinkedIn</a>
+        <!-- EDIT: add your GitHub profile link, or delete this line -->
+        <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container site-footer">© Titus Velpula</footer>
+
+</body>
+</html>

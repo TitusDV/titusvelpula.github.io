@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Titus Velpula</title>
+  <meta name="description" content="AI agents, automation and analytics projects by Titus Velpula.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html">Titus Velpula</a>
+    <div class="nav-links">
+      <a href="index.html#work">What I do</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn btn-outline btn-sm" href="assets/Titus_Velpula_CV.pdf">Download CV</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="container" style="padding-top:80px; padding-bottom:56px">
+    <p class="label" style="margin-bottom:20px">Projects</p>
+    <h1 style="max-width:820px; font-size:clamp(34px,5vw,56px); line-height:1.08; font-weight:600; letter-spacing:-0.02em">Selected work in AI and analytics.</h1>
+    <div class="btn-row" style="margin-top:32px; gap:12px">
+      <a class="pill pill-active" href="#ai">AI</a>
+      <a class="pill" href="#analytics">Analytics</a>
+    </div>
+  </section>
+
+  <!-- ===================== AI: PRODUCTION WORK ===================== -->
+  <section id="ai" class="container" aria-label="Production AI work" style="padding-bottom:24px">
+
+    <article class="project" aria-labelledby="cs-h">
+      <div>
+        <p class="label">AI · In production · Celtine Ltd</p>
+        <h2 id="cs-h">Customer-service agent system</h2>
+        <p class="muted">Enquiries used to need staff to check several business systems before replying. The agent classifies each enquiry, gathers the conversation context and retrieves order and shipping information to prepare a response, or escalates to staff.</p>
+        <p class="stack">n8n · JavaScript · Claude and OpenAI APIs · business rules · structured output validation</p>
+      </div>
+      <div>
+        <h3>What I learned from real cases</h3>
+        <ul>
+          <li>Partial shipments can sit under variations of the original order number, so I added lookups for separate dispatches.</li>
+          <li>I investigate failed runs and review generated replies to improve prompts, routing and error handling.</li>
+          <li>Prompts stay model-agnostic, so the provider can be swapped without a rewrite.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project" aria-labelledby="sm-h">
+      <div>
+        <p class="label">AI · Ready to go live · Celtine Ltd</p>
+        <h2 id="sm-h">Social media automation platform</h2>
+        <p class="muted">A multi-workflow agent system that turns product and media data into posts, renders the media, routes them through human review and publishes on a schedule to Instagram, Facebook, Threads and TikTok.</p>
+        <p class="stack">Claude · Creatomate · Magento 2 · Supabase/PostgreSQL · platform APIs with OAuth</p>
+      </div>
+      <div>
+        <h3>How it is built to be safe to ship</h3>
+        <ul>
+          <li>Evaluation and human review before anything is published.</li>
+          <li>OAuth token handling and scheduled publishing per platform.</li>
+          <li>Media selection, rendering and publishing failures tested before rollout.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===================== AI: RAG PROJECT ===================== -->
+  <article id="rag" class="dark" aria-labelledby="rag-h">
+    <div class="container section" style="display:flex; flex-direction:column; gap:40px">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:24px">
+        <div style="flex:1 1 520px; display:flex; flex-direction:column; gap:16px">
+          <p class="label">AI · Personal project · 2024</p>
+          <h2 id="rag-h" class="h-feature">Telecare RAG Chatbot</h2>
+          <p class="lead on-dark-muted">Monitoring staff need fast, correct answers about alarm types, triage and escalation. This assistant answers from a process document and says when the documents don't cover a question, instead of guessing.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-light" href="https://44bf2b2e-27cf-4b6c-a091-521d38f78934.filesusr.com/ugd/843874_a19e621e56dc4ee3913376821c4a8ec8.pdf">Source document (PDF)</a>
+          <a class="btn btn-outline" style="border-color:var(--bg); color:var(--bg)" href="mailto:titusdinkar@gmail.com?subject=RAG%20chatbot%20code">Code on request</a>
+        </div>
+      </div>
+      <div class="step-grid">
+        <div><span class="step-num">01 Ingest</span><span class="on-dark-muted">Scrape the portfolio page with BeautifulSoup and Selenium, download the PDF, extract text with PyMuPDF.</span></div>
+        <div><span class="step-num">02 Chunk</span><span class="on-dark-muted">Recursive character splitting, with an LLM-driven agentic chunker built for comparison.</span></div>
+        <div><span class="step-num">03 Retrieve</span><span class="on-dark-muted">Ensemble of BM25 keyword search and MiniLM sentence embeddings.</span></div>
+        <div><span class="step-num">04 Answer</span><span class="on-dark-muted">A grounded prompt to a local Llama 3 through Ollama, or an OpenAI model, behind a Gradio UI.</span></div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:32px">
+        <div style="flex:1 1 320px; display:flex; flex-direction:column; gap:8px">
+          <h3 style="font-size:16px; font-weight:600">Stack</h3>
+          <p class="stack on-dark-muted" style="line-height:1.7">Python · LangChain · rank-bm25 · sentence-transformers · DocArray · Ollama · OpenAI · Gradio</p>
+        </div>
+        <div style="flex:1 1 320px; display:flex; flex-direction:column; gap:8px">
+          <h3 style="font-size:16px; font-weight:600">Next steps</h3>
+          <p class="on-dark-muted">Semantic chunking, a persistent vector store, and evaluating each chunking method on a question set.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================== ANALYTICS ===================== -->
+  <!-- EDIT: to add a screenshot, replace <div class="shot placeholder">...</div> with
+       <img class="shot" src="assets/pizza.png" alt="Pizza sales dashboard">
+       To add a report link, uncomment the "View report" line and paste the link. -->
+  <section id="analytics" class="container" aria-label="Analytics projects" style="padding-top:24px; padding-bottom:40px">
+
+    <article id="pizza" class="project" style="border-top:0" aria-labelledby="pizza-h">
+      <div><div class="shot placeholder">Add dashboard screenshot or video</div></div>
+      <div>
+        <p class="label">Analytics · Challenge entry</p>
+        <h2 id="pizza-h">Plato's Pizzeria Sales Analysis</h2>
+        <p class="muted">A year of orders analysed for the owners: a sales forecast for the next quarter, busiest hours, and which table sizes and pizzas earn the most.</p>
+        <ul>
+          <li>Tables of 1 to 4 people brought in about 86% of revenue ($702,852).</li>
+          <li>Two-person tables earned the most, though solo tables were most frequent.</li>
+          <li>Recommended dropping XL and XXL Greek pizza and stocking the four best sellers.</li>
+        </ul>
+        <p class="stack">Power BI · DAX · Excel forecasting · Python (Seaborn)</p>
+        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+      </div>
+    </article>
+
+    <article id="attrition" class="project" aria-labelledby="hr-h">
+      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
+      <div>
+        <p class="label">Analytics · Interactive report</p>
+        <h2 id="hr-h">Employee Attrition Analysis</h2>
+        <p class="muted">IBM's HR sample dataset, analysed to find what drives people to leave. Logic prototyped in SQL Server, then rebuilt as DAX measures.</p>
+        <ul>
+          <li>Separated overall attrition (16.12%) from the period attrition rate (17.5%).</li>
+          <li>221 of 237 leavers had 20 or fewer years' experience and earned under $10,000 a month.</li>
+        </ul>
+        <p class="stack">Power BI · DAX · SQL Server · Python</p>
+        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+      </div>
+    </article>
+
+    <article id="ski" class="project" aria-labelledby="ski-h">
+      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
+      <div>
+        <p class="label">Analytics · Interactive report</p>
+        <h2 id="ski-h">Ski Resorts Planner</h2>
+        <p class="muted">An app-style, two-page report to plan a ski trip across 499 resorts, with monthly snow cover for each one.</p>
+        <ul>
+          <li>Matched each resort to the nearest snow-cover reading using INDEX, MATCH and ABS on latitude and longitude.</li>
+          <li>A MySQL view surfaces resorts that suit every skill level.</li>
+        </ul>
+        <p class="stack">Power BI · Excel · MySQL</p>
+        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+      </div>
+    </article>
+
+    <article id="electricity" class="project" aria-labelledby="elec-h">
+      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
+      <div>
+        <p class="label">Analytics · Real data</p>
+        <h2 id="elec-h">NZ Electricity Generation and Consumption</h2>
+        <p class="muted">MBIE's annual data turned into a monitoring dashboard for generation by plant type, consumption by sector, and network losses.</p>
+        <ul>
+          <li>Year-on-year KPI callouts with variance and efficiency, colour-coded up or down.</li>
+          <li>Compares actual and estimated consumption from 2014 to 2022.</li>
+        </ul>
+        <p class="stack">Power BI · DAX</p>
+        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+      </div>
+    </article>
+  </section>
+
+  <section class="accent-band" aria-labelledby="cta-h">
+    <div class="container" style="padding-top:64px; padding-bottom:64px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px">
+      <h2 id="cta-h" style="font-size:32px; font-weight:600; line-height:1.2">Want the details behind a project?</h2>
+      <a class="btn" style="background:#FFFFFF; color:var(--ink)" href="mailto:titusdinkar@gmail.com">Email me</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container site-footer">© Titus Velpula</footer>
+
+</body>
+</html>
