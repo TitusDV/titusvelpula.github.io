@@ -219,6 +219,21 @@ details pre {
   border-radius: 0 0 8px 8px; font-family: var(--mono); font-size: 13px; line-height: 1.6;
 }
 
+/* ---------- Tools used in each job ---------- */
+.tools { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tools li {
+  display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 10px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  font-size: 14px; font-weight: 500; line-height: 1.3; color: var(--ink);
+}
+.tools img { width: 16px; height: 16px; }
+.job .tools { padding-left: 0; margin-top: 14px; }
+
+/* Screenshots: show the top of tall dashboards */
+.thumb, .shot { object-position: top center; }
+a > .shot { display: block; }
+.walkthrough { width: 100%; max-width: 360px; border-radius: 10px; border: 1px solid var(--line); background: var(--soft); }
+
 /* ---------- Contact band and footer ---------- */
 .accent-band { background: var(--accent); color: #FFFFFF; }
 .accent-band a { color: #FFFFFF; font-weight: 500; }

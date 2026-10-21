@@ -108,13 +108,11 @@
   </article>
 
   <!-- ===================== ANALYTICS ===================== -->
-  <!-- EDIT: to add a screenshot, replace <div class="shot placeholder">...</div> with
-       <img class="shot" src="assets/pizza.png" alt="Pizza sales dashboard">
-       To add a report link, uncomment the "View report" line and paste the link. -->
+  <!-- To add a report link, uncomment the "View report" line and paste the link. -->
   <section id="analytics" class="container" aria-label="Analytics projects" style="padding-top:24px; padding-bottom:40px">
 
     <article id="pizza" class="project" style="border-top:0" aria-labelledby="pizza-h">
-      <div><div class="shot placeholder">Add dashboard screenshot or video</div></div>
+      <div><a href="assets/pizza.jpg"><img class="shot" src="assets/pizza.jpg" alt="Plato's Pizzeria sales dashboard: revenue forecast, table occupancy heatmap, pizza popularity and key takeaways" loading="lazy"></a></div>
       <div>
         <p class="label">Analytics · Challenge entry</p>
         <h2 id="pizza-h">Plato's Pizzeria Sales Analysis</h2>
@@ -158,21 +156,46 @@
           </ul>
           <p class="stack" style="margin-top:16px">Power BI · DAX · SQL Server · Python</p>
         </div>
+        <div>
+          <h3>Walkthrough</h3>
+          <video class="walkthrough" controls muted playsinline preload="none" poster="assets/attrition.jpg">
+            <source src="assets/attrition-walkthrough.mp4" type="video/mp4">
+            <a href="assets/attrition-walkthrough.mp4">Download the walkthrough video</a>
+          </video>
+          <p class="muted" style="font-size:15px">One minute, filtering by department.</p>
+        </div>
       </div>
     </article>
 
-    <article id="ski" class="project" aria-labelledby="ski-h">
-      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
-      <div>
-        <p class="label">Analytics · Interactive report</p>
+    <article id="ski" class="project-live" aria-labelledby="ski-h">
+      <div class="live-head">
+        <p class="label">Analytics · Interactive</p>
         <h2 id="ski-h">Ski Resorts Planner</h2>
-        <p class="muted">An app-style, two-page report to plan a ski trip across 499 resorts, with monthly snow cover for each one.</p>
-        <ul>
-          <li>Matched each resort to the nearest snow-cover reading using INDEX, MATCH and ABS on latitude and longitude.</li>
-          <li>A MySQL view surfaces resorts that suit every skill level.</li>
-        </ul>
-        <p class="stack">Power BI · Excel · MySQL</p>
-        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+        <p class="muted">An app-style, two-page report to plan a ski trip across 499 resorts, with monthly snow cover for each one. Start with Check Snow % or Resorts.</p>
+      </div>
+
+      <div class="embed">
+        <div class="embed-bar">
+          <span class="embed-dot" aria-hidden="true"></span>
+          <span>Live Power BI report</span>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9">Open full screen</a>
+        </div>
+        <div class="embed-frame" style="aspect-ratio: 900 / 804">
+          <iframe title="Ski resorts planner dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="live-notes">
+        <div>
+          <h3>How it works</h3>
+          <ul>
+            <li>Matched each resort to the nearest snow-cover reading using INDEX, MATCH and ABS on latitude and longitude.</li>
+            <li>A MySQL view surfaces resorts that suit every skill level.</li>
+          </ul>
+          <p class="stack" style="margin-top:16px">Power BI · Excel · MySQL</p>
+        </div>
       </div>
     </article>
 
