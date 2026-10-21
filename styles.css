@@ -3,19 +3,22 @@
    picks them up.
    ========================================================== */
 :root {
-  --bg: #F6F5F1;          /* page background */
-  --ink: #15171C;         /* main text, dark band */
-  --muted: #4A4F57;       /* secondary text */
-  --line: #DCDAD3;        /* dividers and borders */
-  --soft: #E9E7E0;        /* image placeholders */
-  --card: #FFFFFF;        /* card background */
-  --accent: #0B6B66;      /* labels, links, contact band */
-  --accent-hover: #084D49;
-  --on-dark-muted: #C9CCD1;
-  --on-dark-line: #3A3E46;
-  --on-dark-accent: #7FD6CC;
-  --sans: 'IBM Plex Sans', system-ui, sans-serif;
-  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  /* Colours */
+  --bg: #F5F6F8;
+  --ink: #121826;
+  --muted: #566070;
+  --line: #DCE0E7;
+  --soft: #E7EAF0;
+  --card: #FFFFFF;
+  --accent: #2747D9;
+  --accent-hover: #1C35A8;
+  --band: #111A3A;
+  --on-dark-muted: #B9C2DC;
+  --on-dark-line: #2A355C;
+  --on-dark-accent: #9DB2FF;
+  --display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --sans: 'Instrument Sans', system-ui, sans-serif;
+  --mono: 'Instrument Sans', system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -224,12 +227,49 @@ details pre {
 .contact-links { display: flex; flex-direction: column; gap: 12px; font-size: 17px; }
 .site-footer { padding: 28px 24px; font-size: 14px; color: var(--muted); }
 
+/* ---------- Cobalt theme: fonts, labels, signature hero ---------- */
+h1, h2, h3, .brand, .steps-title { font-family: var(--display); }
+h1, h2 { font-weight: 700; }
+.brand { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
+
+/* Labels: sentence case, no code font */
+.label, h2.label { font-family: var(--sans); font-size: 15px; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.stack { font-size: 14px; font-weight: 500; color: var(--muted); }
+.dates { font-family: var(--sans); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+/* Signature: a big, tight hero headline */
+.hero { padding: 112px 0 96px; }
+.hero h1 { font-size: clamp(44px, 8.4vw, 104px); line-height: 0.95; font-weight: 800; letter-spacing: -0.045em; max-width: 1000px; }
+.hero-sub { font-size: 21px; }
+
+.btn { border-radius: 999px; font-weight: 600; }
+.btn-dark { background: var(--accent); color: #FFFFFF; }
+.btn-dark:hover { background: var(--accent-hover); color: #FFFFFF; }
+
+.card, .project-card { border-radius: 16px; }
+.project-card:hover { border-color: var(--accent); }
+.h-section { font-size: 36px; letter-spacing: -0.03em; }
+.h-feature, .contact h2 { letter-spacing: -0.03em; }
+
+.dark { background: var(--band); }
+.step-grid > div { background: var(--band); }
+.steps-title { color: var(--on-dark-muted); font-size: 15px; font-weight: 700; }
+.step-num { font-family: var(--display); font-weight: 700; }
+
+.pill { border-color: var(--line); }
+.pill-active { background: var(--accent); border-color: var(--accent); color: #FFFFFF; }
+.embed-bar { background: #FAFBFC; font-family: var(--sans); font-size: 13px; }
+details pre { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; background: var(--band); }
+.placeholder { font-family: var(--sans); }
+
+.dark .stack { color: var(--on-dark-muted); }
+
 @media (max-width: 600px) {
   .section { padding-top: 56px; padding-bottom: 56px; }
-  .hero { padding: 64px 0 56px; }
+  .hero { padding: 72px 0 56px; }
   .hero-sub, .lead { font-size: 17px; }
   .h-feature { font-size: 32px; }
   .contact h2 { font-size: 34px; }
-  .h-section { font-size: 28px; }
+  .h-section { font-size: 30px; }
   .project h2 { font-size: 26px; }
 }
