@@ -129,18 +129,35 @@
       </div>
     </article>
 
-    <article id="attrition" class="project" aria-labelledby="hr-h">
-      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
-      <div>
-        <p class="label">Analytics · Interactive report</p>
+    <article id="attrition" class="project-live" aria-labelledby="hr-h">
+      <div class="live-head">
+        <p class="label">Analytics · Interactive</p>
         <h2 id="hr-h">Employee Attrition Analysis</h2>
         <p class="muted">IBM's HR sample dataset, analysed to find what drives people to leave. Logic prototyped in SQL Server, then rebuilt as DAX measures.</p>
-        <ul>
-          <li>Separated overall attrition (16.12%) from the period attrition rate (17.5%).</li>
-          <li>221 of 237 leavers had 20 or fewer years' experience and earned under $10,000 a month.</li>
-        </ul>
-        <p class="stack">Power BI · DAX · SQL Server · Python</p>
-        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+      </div>
+
+      <div class="embed">
+        <div class="embed-bar">
+          <span class="embed-dot" aria-hidden="true"></span>
+          <span>Live Power BI report</span>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860">Open full screen</a>
+        </div>
+        <div class="embed-frame" style="aspect-ratio: 930 / 663.5">
+          <iframe title="Employee attrition dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="live-notes">
+        <div>
+          <h3>Key findings</h3>
+          <ul>
+            <li>Separated overall attrition (16.12%) from the period attrition rate (17.5%).</li>
+            <li>221 of 237 leavers had 20 or fewer years' experience and earned under $10,000 a month.</li>
+          </ul>
+          <p class="stack" style="margin-top:16px">Power BI · DAX · SQL Server · Python</p>
+        </div>
       </div>
     </article>
 
@@ -159,18 +176,78 @@
       </div>
     </article>
 
-    <article id="electricity" class="project" aria-labelledby="elec-h">
-      <div><div class="shot placeholder">Add dashboard screenshot</div></div>
-      <div>
-        <p class="label">Analytics · Real data</p>
+    <!-- A project with a live Power BI dashboard. To embed another report, copy this
+         whole <article> and change the text and the iframe's src link. -->
+    <article id="electricity" class="project-live" aria-labelledby="elec-h">
+      <div class="live-head">
+        <p class="label">Analytics · Real data · Interactive</p>
         <h2 id="elec-h">NZ Electricity Generation and Consumption</h2>
-        <p class="muted">MBIE's annual data turned into a monitoring dashboard for generation by plant type, consumption by sector, and network losses.</p>
-        <ul>
-          <li>Year-on-year KPI callouts with variance and efficiency, colour-coded up or down.</li>
-          <li>Compares actual and estimated consumption from 2014 to 2022.</li>
-        </ul>
-        <p class="stack">Power BI · DAX</p>
-        <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
+        <p class="muted">MBIE's yearly data turned into a monitoring dashboard for generation by plant type, consumption by sector, and network losses. Pick a year to see it compared with the year before.</p>
+      </div>
+
+      <div class="embed">
+        <div class="embed-bar">
+          <span class="embed-dot" aria-hidden="true"></span>
+          <span>Live Power BI report</span>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYmI5NzdmODUtMDYyZS00NGNiLTk3OWItMjI4NDczMGIyNTM4IiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9">Open full screen</a>
+        </div>
+        <div class="embed-frame" style="aspect-ratio: 9 / 8">
+          <iframe title="NZ electricity generation and consumption dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYmI5NzdmODUtMDYyZS00NGNiLTk3OWItMjI4NDczMGIyNTM4IiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="live-notes">
+        <div>
+          <h3>What it shows</h3>
+          <ul>
+            <li><b>KPI cards</b> for electricity generated, consumed and lost each year. Each card's call-out compares the selected year with the previous year: actuals, variance, variance % and, for generation, efficiency (the share of generated electricity that was consumed).</li>
+            <li><b>Conditional colour:</b> call-outs turn green when the year is up on the previous year, and red when it is down.</li>
+            <li><b>Losses</b> are split into distribution and transmission, with the previous year's total and its variance.</li>
+            <li><b>Trend chart</b> comparing actual and estimated consumption (lines) against generation (bars), from 2014 to 2022, since actual consumption isn't in the data before 2014.</li>
+            <li><b>Bookmarks and buttons</b> switch between trends by generation plant type (biogas, hydro, geothermal, wind and more) and by consumption sector (residential, commercial, industrial and more).</li>
+          </ul>
+          <p class="stack" style="margin-top:16px">Power BI · DAX · bookmarks · conditional formatting</p>
+        </div>
+        <div>
+          <h3>How it's built</h3>
+          <details>
+            <summary>DAX: call-out value (PY | Var | Var% | Efficiency%)</summary>
+<pre><code>PY Actuals | Var | Var% | Efficiency% (CY vs PY) =
+VAR PY = [Electricity Generated PY]
+VAR var_varie = [Electricity Varience]
+VAR var_perc = [Electricity Variance %]
+VAR var_effic = [Energy Efficiency]
+VAR symbol_pos = "↑"
+VAR symbol_neg = "↓"
+VAR Result =
+    SWITCH(TRUE(), var_varie &gt;= 0, symbol_pos, symbol_neg)
+    &amp; " " &amp;
+    IF(
+        ISBLANK(var_varie),
+        FORMAT(var_varie, "+#,0;-#,0;0"),
+        FORMAT(PY, "#,0") &amp; " | " &amp;
+        FORMAT(var_varie, "+#,0;-#,0;0") &amp; " | " &amp;
+        FORMAT(var_perc, "+0.0%;-0.0%;0%") &amp; " | " &amp;
+        FORMAT(var_effic, "#,0%")
+    )
+RETURN
+    Result</code></pre>
+          </details>
+          <details>
+            <summary>DAX: call-out colour (green up, red down)</summary>
+<pre><code>001. Electricity Generated KPI color (fx) =
+VAR var_nominal = [Electricity Varience]
+VAR result =
+    SWITCH(TRUE(),
+        var_nominal &gt;= 0, "#358686",
+        "#B24A4A"
+    )
+RETURN
+    result</code></pre>
+          </details>
+        </div>
       </div>
     </article>
   </section>

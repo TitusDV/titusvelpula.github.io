@@ -177,6 +177,45 @@ h1, h2, h3, p, ul { margin: 0; }
 .pill:hover { border-color: var(--ink); color: var(--ink); }
 .pill-active:hover { color: var(--bg); }
 
+/* ---------- Live dashboard projects ---------- */
+.project-live { padding: 56px 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; }
+.live-head { max-width: 760px; display: flex; flex-direction: column; gap: 12px; }
+.live-head h2 { font-size: 30px; font-weight: 600; line-height: 1.15; }
+
+.embed {
+  max-width: 960px; width: 100%;
+  border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+  background: var(--card); box-shadow: 0 1px 2px rgba(21, 23, 28, 0.04), 0 12px 32px rgba(21, 23, 28, 0.08);
+}
+.embed-bar {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 10px 16px; border-bottom: 1px solid var(--line);
+  font-family: var(--mono); font-size: 12px; color: var(--muted); background: #FBFAF7;
+}
+.embed-bar a { margin-left: auto; font-family: var(--sans); font-size: 14px; font-weight: 500; }
+.embed-dot { width: 8px; height: 8px; border-radius: 50%; background: #2E9E6B; box-shadow: 0 0 0 3px rgba(46, 158, 107, 0.18); }
+.embed-frame { width: 100%; background: var(--soft); }
+.embed-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+
+.live-notes { display: flex; flex-wrap: wrap; gap: 40px; }
+.live-notes > div { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.live-notes h3 { font-size: 17px; font-weight: 600; }
+.live-notes ul { padding-left: 20px; }
+.live-notes li { margin-bottom: 6px; }
+.live-notes b { font-weight: 600; }
+
+details { border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+details + details { margin-top: 4px; }
+summary {
+  cursor: pointer; padding: 12px 16px; font-size: 15px; font-weight: 500;
+  list-style-position: inside; min-height: 44px;
+}
+summary:hover { color: var(--accent); }
+details pre {
+  margin: 0; padding: 16px; overflow-x: auto; background: var(--ink); color: #E6E8EB;
+  border-radius: 0 0 8px 8px; font-family: var(--mono); font-size: 13px; line-height: 1.6;
+}
+
 /* ---------- Contact band and footer ---------- */
 .accent-band { background: var(--accent); color: #FFFFFF; }
 .accent-band a { color: #FFFFFF; font-weight: 500; }
