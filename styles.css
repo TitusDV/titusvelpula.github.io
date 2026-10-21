@@ -239,7 +239,7 @@ h1, h2 { font-weight: 700; }
 
 /* Signature: a big, tight hero headline */
 .hero { padding: 112px 0 96px; }
-.hero h1 { font-size: clamp(44px, 8.4vw, 104px); line-height: 0.95; font-weight: 800; letter-spacing: -0.045em; max-width: 1000px; }
+.hero h1 { font-size: clamp(40px, 7.2vw, 88px); line-height: 0.98; font-weight: 800; letter-spacing: -0.045em; max-width: 1000px; }
 .hero-sub { font-size: 21px; }
 
 .btn { border-radius: 999px; font-weight: 600; }
