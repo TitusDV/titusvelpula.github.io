@@ -219,15 +219,24 @@ details pre {
   border-radius: 0 0 8px 8px; font-family: var(--mono); font-size: 13px; line-height: 1.6;
 }
 
-/* ---------- Tools used in each job ---------- */
-.tools { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.tools li {
-  display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px 5px 10px;
-  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
-  font-size: 14px; font-weight: 500; line-height: 1.3; color: var(--ink);
+/* ---------- Tools used in each job (side column) ---------- */
+.job-side { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
+.tools {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, 64px); gap: 8px;
 }
-.tools img { width: 16px; height: 16px; }
-.job .tools { padding-left: 0; margin-top: 14px; }
+.tools li {
+  height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  font-size: 10.5px; font-weight: 500; line-height: 1.1; color: var(--muted); text-align: center;
+}
+.tools img { width: 26px; height: 26px; }
+.job .tools { padding-left: 0; margin-top: 0; }
+.tools .text-only b { font-size: 12px; font-weight: 600; color: var(--ink); padding: 0 4px; }
+@media (max-width: 640px) {
+  .job-side { align-items: flex-start; width: 100%; }
+  .tools { grid-template-columns: repeat(4, 64px); }
+}
 
 /* Screenshots: show the top of tall dashboards */
 .thumb, .shot { object-position: top center; }
