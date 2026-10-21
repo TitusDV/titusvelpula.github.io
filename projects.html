@@ -37,39 +37,43 @@
   </section>
 
   <!-- ===================== AI: PRODUCTION WORK ===================== -->
-  <section id="ai" class="container" aria-label="Production AI work" style="padding-bottom:24px">
+  <!-- ===================== AI: HOW I WORK ===================== -->
+  <div id="ai" class="container group-head">
+    <h2 class="group-title">AI and automation</h2>
+    <p class="muted">How I approach AI systems, and a retrieval project of my own.</p>
+  </div>
+  <section class="container" aria-label="How I build AI systems" style="padding-bottom:24px">
 
-    <article class="project" aria-labelledby="cs-h">
-      <div>
-        <p class="label">AI · In production · Celtine Ltd</p>
-        <h2 id="cs-h">Customer-service agent system</h2>
-        <p class="muted">Enquiries used to need staff to check several business systems before replying. The agent classifies each enquiry, gathers the conversation context and retrieves order and shipping information to prepare a response, or escalates to staff.</p>
-        <p class="stack">n8n · JavaScript · Claude and OpenAI APIs · business rules · structured output validation</p>
+    <article id="principles" class="case" aria-labelledby="case4-h">
+      <div class="case-head">
+        <p class="label">How I work</p>
+        <h2 id="case4-h">How I build AI systems</h2>
       </div>
-      <div>
-        <h3>What I learned from real cases</h3>
-        <ul>
-          <li>Partial shipments can sit under variations of the original order number, so I added lookups for separate dispatches.</li>
-          <li>I investigate failed runs and review generated replies to improve prompts, routing and error handling.</li>
-          <li>Prompts stay model-agnostic, so the provider can be swapped without a rewrite.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="project" aria-labelledby="sm-h">
-      <div>
-        <p class="label">AI · Ready to go live · Celtine Ltd</p>
-        <h2 id="sm-h">Social media automation platform</h2>
-        <p class="muted">A multi-workflow agent system that turns product and media data into posts, renders the media, routes them through human review and publishes on a schedule to Instagram, Facebook, Threads and TikTok.</p>
-        <p class="stack">Claude · Creatomate · Magento 2 · Supabase/PostgreSQL · platform APIs with OAuth</p>
-      </div>
-      <div>
-        <h3>How it is built to be safe to ship</h3>
-        <ul>
-          <li>Evaluation and human review before anything is published.</li>
-          <li>OAuth token handling and scheduled publishing per platform.</li>
-          <li>Media selection, rendering and publishing failures tested before rollout.</li>
-        </ul>
+      <div class="patterns patterns-3">
+        <div>
+          <h3>Evaluate before shipping</h3>
+          <p>Give every agent a test set, and checks that run before its output reaches a person.</p>
+        </div>
+        <div>
+          <h3>Design for failure</h3>
+          <p>Let uncertain cases degrade gracefully and go to a person, instead of guessing.</p>
+        </div>
+        <div>
+          <h3>Rules where possible, models where needed</h3>
+          <p>Keep predictable steps in plain code, and use models for language, inside clear constraints.</p>
+        </div>
+        <div>
+          <h3>Keep secrets and personal data contained</h3>
+          <p>Keep keys out of logs, verify incoming webhooks, and send a model only the personal data a task needs.</p>
+        </div>
+        <div>
+          <h3>Stay model-agnostic</h3>
+          <p>Write prompts and interfaces that don't depend on one provider, so models can be swapped without a rewrite.</p>
+        </div>
+        <div>
+          <h3>Make it observable</h3>
+          <p>Log what matters, including failures, so problems show up in the data before they show up in complaints.</p>
+        </div>
       </div>
     </article>
   </section>
@@ -109,7 +113,11 @@
 
   <!-- ===================== ANALYTICS ===================== -->
   <!-- To add a report link, uncomment the "View report" line and paste the link. -->
-  <section id="analytics" class="container" aria-label="Analytics projects" style="padding-top:24px; padding-bottom:40px">
+  <div id="analytics" class="container group-head">
+    <h2 class="group-title">Analytics</h2>
+    <p class="muted">Power BI dashboards and analysis, most of them live and interactive.</p>
+  </div>
+  <section class="container" aria-label="Analytics projects" style="padding-bottom:40px">
 
     <article id="pizza" class="project" style="border-top:0" aria-labelledby="pizza-h">
       <div><a href="assets/pizza.jpg"><img class="shot" src="assets/pizza.jpg" alt="Plato's Pizzeria sales dashboard: revenue forecast, table occupancy heatmap, pizza popularity and key takeaways" loading="lazy"></a></div>

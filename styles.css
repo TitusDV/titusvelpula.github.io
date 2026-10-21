@@ -243,6 +243,38 @@ details pre {
 a > .shot { display: block; }
 .walkthrough { width: 100%; max-width: 360px; border-radius: 10px; border: 1px solid var(--line); background: var(--soft); }
 
+/* ---------- AI case studies ---------- */
+.case { padding: 56px 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; }
+.case-head { max-width: 780px; display: flex; flex-direction: column; gap: 12px; }
+.case-head h2 { font-size: 32px; font-weight: 700; line-height: 1.12; letter-spacing: -0.025em; }
+.case h3 { font-size: 17px; font-weight: 700; }
+.case ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.case b { font-weight: 600; }
+
+
+.patterns { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.patterns > div {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 22px; display: flex; flex-direction: column; gap: 8px;
+}
+.patterns-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.patterns p { font-size: 15.5px; line-height: 1.55; color: var(--muted); }
+
+/* ---------- Grouping: AI vs analytics ---------- */
+.group-head { padding-top: 72px; padding-bottom: 8px; display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px; }
+.group-title { font-size: clamp(36px, 5vw, 52px); font-weight: 800; letter-spacing: -0.035em; line-height: 1; }
+.group-head + section > .case:first-child, .group-head + section > .project:first-child { border-top: 0; }
+.group-head#analytics { border-top: 1px solid var(--line); margin-top: 24px; }
+
+/* Featured AI projects on the home page */
+.featured-head { margin-bottom: 8px; }
+.dark .h-section { color: #FFFFFF; }
+.dark .link-accent { color: var(--on-dark-accent); }
+.feature { padding: 48px 0; }
+.feature + .feature { border-top: 1px solid var(--on-dark-line); }
+.feature:last-child { padding-bottom: 0; }
+h3.h-feature { font-size: 36px; }
+
 /* ---------- Contact band and footer ---------- */
 .accent-band { background: var(--accent); color: #FFFFFF; }
 .accent-band a { color: #FFFFFF; font-weight: 500; }
@@ -296,4 +328,7 @@ details pre { font-family: ui-monospace, 'Cascadia Code', Consolas, monospace; b
   .contact h2 { font-size: 34px; }
   .h-section { font-size: 30px; }
   .project h2 { font-size: 26px; }
+  .case-head h2 { font-size: 26px; }
+  h3.h-feature { font-size: 28px; }
+  .group-head { padding-top: 48px; }
 }
