@@ -36,7 +36,6 @@
     </div>
   </section>
 
-  <!-- ===================== AI: PRODUCTION WORK ===================== -->
   <!-- ===================== AI: HOW I WORK ===================== -->
   <div id="ai" class="container group-head">
     <h2 class="group-title">AI and automation</h2>
@@ -119,81 +118,9 @@
   </div>
   <section class="container" aria-label="Analytics projects" style="padding-bottom:40px">
 
-    <article id="attrition" class="project-live" aria-labelledby="hr-h">
-      <div class="live-head">
-        <p class="label">Analytics · Interactive</p>
-        <h2 id="hr-h">Employee Attrition Analysis</h2>
-        <p class="muted">IBM's HR sample dataset, analysed to find what drives people to leave. Logic prototyped in SQL Server, then rebuilt as DAX measures.</p>
-      </div>
-
-      <div class="embed">
-        <div class="embed-bar">
-          <span class="embed-dot" aria-hidden="true"></span>
-          <span>Live Power BI report</span>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860">Open full screen</a>
-        </div>
-        <div class="embed-frame" style="aspect-ratio: 930 / 663.5">
-          <iframe title="Employee attrition dashboard"
-            src="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860"
-            loading="lazy" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="live-notes">
-        <div>
-          <h3>Key findings</h3>
-          <ul>
-            <li>Separated overall attrition (16.12%) from the period attrition rate (17.5%).</li>
-            <li>221 of 237 leavers had 20 or fewer years' experience and earned under $10,000 a month.</li>
-          </ul>
-          <p class="stack" style="margin-top:16px">Power BI · DAX · SQL Server · Python</p>
-        </div>
-        <div>
-          <h3>Walkthrough</h3>
-          <video class="walkthrough" controls muted playsinline preload="none" poster="assets/attrition.jpg">
-            <source src="assets/attrition-walkthrough.mp4" type="video/mp4">
-            <a href="assets/attrition-walkthrough.mp4">Download the walkthrough video</a>
-          </video>
-          <p class="muted" style="font-size:15px">One minute, filtering by department.</p>
-        </div>
-      </div>
-    </article>
-
-    <article id="ski" class="project-live" aria-labelledby="ski-h">
-      <div class="live-head">
-        <p class="label">Analytics · Interactive</p>
-        <h2 id="ski-h">Ski Resorts Planner</h2>
-        <p class="muted">An app-style, two-page report to plan a ski trip across 499 resorts, with monthly snow cover for each one. Start with Check Snow % or Resorts.</p>
-      </div>
-
-      <div class="embed">
-        <div class="embed-bar">
-          <span class="embed-dot" aria-hidden="true"></span>
-          <span>Live Power BI report</span>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9">Open full screen</a>
-        </div>
-        <div class="embed-frame" style="aspect-ratio: 900 / 804">
-          <iframe title="Ski resorts planner dashboard"
-            src="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9"
-            loading="lazy" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <div class="live-notes">
-        <div>
-          <h3>How it works</h3>
-          <ul>
-            <li>Matched each resort to the nearest snow-cover reading using INDEX, MATCH and ABS on latitude and longitude.</li>
-            <li>A MySQL view surfaces resorts that suit every skill level.</li>
-          </ul>
-          <p class="stack" style="margin-top:16px">Power BI · Excel · MySQL</p>
-        </div>
-      </div>
-    </article>
-
     <!-- A project with a live Power BI dashboard. To embed another report, copy this
          whole <article> and change the text and the iframe's src link. -->
-    <article id="electricity" class="project-live" aria-labelledby="elec-h">
+    <article id="electricity" class="project-live" style="border-top:0" aria-labelledby="elec-h">
       <div class="live-head">
         <p class="label">Analytics · Real data · Interactive</p>
         <h2 id="elec-h">NZ Electricity Generation and Consumption</h2>
@@ -265,15 +192,80 @@ RETURN
         </div>
       </div>
     </article>
-  </section>
 
-  <section class="accent-band" aria-labelledby="cta-h">
-    <div class="container" style="padding-top:64px; padding-bottom:64px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px">
-      <h2 id="cta-h" style="font-size:32px; font-weight:600; line-height:1.2">Want the details behind a project?</h2>
-      <a class="btn" style="background:#FFFFFF; color:var(--ink)" href="mailto:titusdinkar@gmail.com">Email me</a>
-    </div>
-  </section>
-    <article id="pizza" class="project" style="border-top:0" aria-labelledby="pizza-h">
+    <article id="ski" class="project-live" aria-labelledby="ski-h">
+      <div class="live-head">
+        <p class="label">Analytics · Interactive</p>
+        <h2 id="ski-h">Ski Resorts Planner</h2>
+        <p class="muted">An app-style, two-page report to plan a ski trip across 499 resorts, with monthly snow cover for each one. Start with Check Snow % or Resorts.</p>
+      </div>
+
+      <div class="embed">
+        <div class="embed-bar">
+          <span class="embed-dot" aria-hidden="true"></span>
+          <span>Live Power BI report</span>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9">Open full screen</a>
+        </div>
+        <div class="embed-frame" style="aspect-ratio: 900 / 804">
+          <iframe title="Ski resorts planner dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTk5NDNiN2ItMjIzNy00NjA5LThiOGItODU4MjFjMWRiYmMzIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="live-notes">
+        <div>
+          <h3>How it works</h3>
+          <ul>
+            <li>Matched each resort to the nearest snow-cover reading using INDEX, MATCH and ABS on latitude and longitude.</li>
+            <li>A MySQL view surfaces resorts that suit every skill level.</li>
+          </ul>
+          <p class="stack" style="margin-top:16px">Power BI · Excel · MySQL</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="attrition" class="project-live" aria-labelledby="hr-h">
+      <div class="live-head">
+        <p class="label">Analytics · Interactive</p>
+        <h2 id="hr-h">Employee Attrition Analysis</h2>
+        <p class="muted">IBM's HR sample dataset, analysed to find what drives people to leave. Logic prototyped in SQL Server, then rebuilt as DAX measures.</p>
+      </div>
+
+      <div class="embed">
+        <div class="embed-bar">
+          <span class="embed-dot" aria-hidden="true"></span>
+          <span>Live Power BI report</span>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860">Open full screen</a>
+        </div>
+        <div class="embed-frame" style="aspect-ratio: 930 / 663.5">
+          <iframe title="Employee attrition dashboard"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYzljOGYwOTYtNDM2Yy00MzIwLWIzOWYtMWFjMzM3MjczYWNkIiwidCI6IjA2OGJkYmZkLWZjN2QtNDEyYS04OWFiLTNiNmY1OWVkMmQ4MSJ9&amp;pageName=ReportSection2e98980d72b06ca10860"
+            loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="live-notes">
+        <div>
+          <h3>Key findings</h3>
+          <ul>
+            <li>Separated overall attrition (16.12%) from the period attrition rate (17.5%).</li>
+            <li>221 of 237 leavers had 20 or fewer years' experience and earned under $10,000 a month.</li>
+          </ul>
+          <p class="stack" style="margin-top:16px">Power BI · DAX · SQL Server · Python</p>
+        </div>
+        <div>
+          <h3>Walkthrough</h3>
+          <video class="walkthrough" controls muted playsinline preload="none" poster="assets/attrition.jpg">
+            <source src="assets/attrition-walkthrough.mp4" type="video/mp4">
+            <a href="assets/attrition-walkthrough.mp4">Download the walkthrough video</a>
+          </video>
+          <p class="muted" style="font-size:15px">One minute, filtering by department.</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="pizza" class="project" aria-labelledby="pizza-h">
       <div><a href="assets/pizza.jpg"><img class="shot" src="assets/pizza.jpg" alt="Plato's Pizzeria sales dashboard: revenue forecast, table occupancy heatmap, pizza popularity and key takeaways" loading="lazy"></a></div>
       <div>
         <p class="label">Analytics · Challenge entry</p>
@@ -288,6 +280,16 @@ RETURN
         <!-- <a href="PASTE-REPORT-LINK" style="font-weight:500">View report</a> -->
       </div>
     </article>
+
+  </section>
+
+  <section class="accent-band" aria-labelledby="cta-h">
+    <div class="container" style="padding-top:64px; padding-bottom:64px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px">
+      <h2 id="cta-h" style="font-size:32px; font-weight:600; line-height:1.2">Want the details behind a project?</h2>
+      <a class="btn" style="background:#FFFFFF; color:var(--ink)" href="mailto:titusdinkar@gmail.com">Email me</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="container site-footer">© Titus Velpula</footer>
