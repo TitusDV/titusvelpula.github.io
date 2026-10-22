@@ -21,6 +21,10 @@ My personal portfolio as an AI developer in Auckland, New Zealand. It covers the
 └── cv/             Source for the CV (HTML, printed to PDF)
 ```
 
+## Updating styles
+
+The pages load `styles.css?v=4`. After changing `styles.css`, bump the number in both `index.html` and `projects.html` (for example to `v=5`) so browsers fetch the new version instead of a cached one.
+
 ## Run it locally
 
 Clone the repo and open `index.html` in a browser.
