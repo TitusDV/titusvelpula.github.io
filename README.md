@@ -1,39 +1,20 @@
-# Titus Velpula: portfolio site
+Titus Velpula portfolio
 
-My personal portfolio as an AI developer in Auckland, New Zealand. It covers the AI agents and automation I build in production, my analytics work with live Power BI dashboards, my experience, and my CV.
+My portfolio site: https://measuredai.co.nz
 
-**Live site:** https://titusdv.github.io/titusvelpula.github.io/
+I'm an AI developer in Auckland. The site has the AI projects I've built (a RAG research assistant with a measured retrieval evaluation, and my earlier telecare RAG chatbot), my analytics work with live Power BI dashboards, my experience, and my CV.
 
-## Built with
+It's plain HTML and CSS with no framework and no build step, hosted on GitHub Pages.
 
-- Plain HTML and CSS, with no framework and no build step
-- Hosted on GitHub Pages
-- Live dashboards embedded from Power BI
-- Fonts: Bricolage Grotesque and Instrument Sans (Google Fonts)
+├── index.html      home page
+├── projects.html   AI and analytics projects
+├── styles.css      colours, fonts and layout
+├── assets/         CV (PDF), images and the attrition walkthrough video
+├── cv/             the CV source, which I print to PDF
+└── CNAME           the custom domain for GitHub Pages
 
-## Structure
+The pages load styles.css?v=5. When I change the styles I bump that number in both pages, so browsers don't keep showing the old version.
 
-```
-├── index.html      Home: current work, skills, featured project, experience
-├── projects.html   Projects: AI systems, RAG chatbot, analytics dashboards
-├── styles.css      Colours, fonts and layout for every page
-├── assets/         CV (PDF) and images
-└── cv/             Source for the CV (HTML, printed to PDF)
-```
+Fonts are Bricolage Grotesque and Instrument Sans from Google Fonts. Tool logos are from Simple Icons and Devicon.
 
-## Updating styles
-
-The pages load `styles.css?v=4`. After changing `styles.css`, bump the number in both `index.html` and `projects.html` (for example to `v=5`) so browsers fetch the new version instead of a cached one.
-
-## Run it locally
-
-Clone the repo and open `index.html` in a browser.
-
-```
-git clone https://github.com/TitusDV/titusvelpula.github.io.git
-```
-
-## Contact
-
-- Email: titusdinkar@gmail.com
-- LinkedIn: https://www.linkedin.com/in/titus-dinakar-velpula/
+Contact: titusdinkar@gmail.com · LinkedIn
